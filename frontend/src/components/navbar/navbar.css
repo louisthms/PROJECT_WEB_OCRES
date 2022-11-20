@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #393b92;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: serif;
+    font-weight: bold;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2rem 2rem;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+li a:hover {
+    background-color: #343E59;
+}
