@@ -4,14 +4,11 @@ import Converter from '../converter/converter';
 
 const dashboard = () => {
     return (
-        <div className="board">
+        <div className="dashboard">
             <h2>Dashboard</h2>
-            <div className="stock">
-                <div className="box">
-                    <Converter />
-                </div>
+            <div className="card">
+                <Converter />
             </div>
-
 
         </div>
     )

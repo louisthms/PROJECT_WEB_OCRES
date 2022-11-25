@@ -15,11 +15,3 @@
   grid-template-columns: 11rem auto 0;
   overflow: hidden;
 }
-
-.Dashboard {
-  background-color: #1c1948;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}

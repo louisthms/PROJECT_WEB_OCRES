@@ -1,15 +1,17 @@
-.board {
-    margin: 1.5rem;
+.dashboard {
+    background-color: #1c1948;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
-.stock {
+.card {
     margin: 0.7rem;
     display: flex;
+    justify-content: space-around;
+    /* flex-direction: row;
+    align-items: center; */
 
-}
-
-
-.box {
-    margin: auto;
 }

@@ -9,7 +9,7 @@ function Converter() {
     const [val2, setCurrency2] = useState('');
     const getAllData = () => {
         axios
-            .get("https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=XR9JO0GLJIEHUET7")
+            .get("https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=demo")
             .then((response) => {
                 console.log(response.data);
                 setData(response.data['Realtime Currency Exchange Rate']['5. Exchange Rate']);
@@ -22,16 +22,16 @@ function Converter() {
     }
 
     useEffect(() => {
-        //setInterval(getAllData, 10000);
-        getAllData();
+        setInterval(getAllData, 1000);
+        //getAllData();
 
     }, []);
 
     return (
-        <div className="Converter">
+        <div className="converter">
             <h3>{val1} to {val2}</h3>
             <h3>¥{parseFloat(data).toFixed(3)}</h3>
-        </div >
+        </div>
     )
 }
 
