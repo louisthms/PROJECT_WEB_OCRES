@@ -14,3 +14,11 @@
     flex-flow: row wrap;
 
 }
+
+.charts {
+    margin: 0.7rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+}
