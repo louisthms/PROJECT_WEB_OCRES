@@ -7,7 +7,7 @@
     transition-property: box-shadow, transform;
     transition-duration: 350ms;
     transition-timing-function: ease;
-    width: 30%;
+    width: 40%;
 }
 
 .chart:hover {

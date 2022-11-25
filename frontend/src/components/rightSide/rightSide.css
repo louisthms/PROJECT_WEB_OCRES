@@ -1,0 +1,15 @@
+.rightside {
+    background-color: #1c1948;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card {
+    margin: 0.7rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+}
