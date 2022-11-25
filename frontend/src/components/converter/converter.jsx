@@ -22,8 +22,8 @@ function Converter() {
     }
 
     useEffect(() => {
-        setInterval(getAllData, 1000);
-        //getAllData();
+        //setInterval(getAllData, 1000);
+        getAllData();
 
     }, []);
 

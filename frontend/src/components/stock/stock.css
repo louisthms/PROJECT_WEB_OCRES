@@ -1,4 +1,4 @@
-.converter {
+.stock {
     background-color: #2B2D3E;
     padding: 25px 20px;
     border-radius: 0.7rem;
@@ -9,11 +9,10 @@
     width: 7rem;
 }
 
-.converter:hover {
+.stock:hover {
     cursor: pointer;
     color: #ffee10;
     box-shadow: 0 0 15px #ffee10;
-    text-shadow: 0 0 5px #ffee10;
     transform: translateY(-1rem);
 }
 
