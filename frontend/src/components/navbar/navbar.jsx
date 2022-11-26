@@ -9,13 +9,13 @@ const navbar = () => {
             <Router>
                 <ul>
                     <li><Link to={'/'} className="nav-link"> Home </Link></li>
-                    <li><Link to={'/contact'} className="nav-link">Contact</Link></li>
-                    <li><Link to={'/about'} className="nav-link">About</Link></li>
+                    <li><Link to={'/changeContact'} className="nav-link">Contacts</Link></li>
+                    <li><Link to={'/changeDepense'} className="nav-link">Virements</Link></li>
                 </ul>
                 <Routes>
                     <Route path='/' />
-                    <Route path='/contact' />
-                    <Route path='/about' />
+                    <Route path='/changeContact' />
+                    <Route path='/changeDepense' />
                 </Routes>
             </Router>
 
