@@ -20,7 +20,7 @@ input:focus {
 
 .searchIcon {
     height: 60px;
-    width: 50px;
+    width: 33.33%;
     background-color: white;
     display: grid;
     place-items: center;
