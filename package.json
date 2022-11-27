@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "apexcharts": "^3.36.3",
+    "framer-motion": "^7.6.12",
+    "react-apexcharts": "^1.4.0",
+    "react-circular-progressbar": "^2.1.0"
+  }
+}
