@@ -3,13 +3,13 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import './converter.css';
 
-function Converter() {
+function CryptoConv() {
     const [data, setData] = useState('');
     const [val1, setCurrency1] = useState('');
     const [val2, setCurrency2] = useState('');
     const getAllData = () => {
         axios
-            .get("https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=X5I9DLG9F0HSSR8C")
+            .get("https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=BTC&to_currency=USD&apikey=02TKZBU61JRPZUHO")
             .then((response) => {
                 console.log(response.data);
                 setData(response.data['Realtime Currency Exchange Rate']['5. Exchange Rate']);
@@ -30,9 +30,9 @@ function Converter() {
     return (
         <div className="converter">
             <h3>{val1} to {val2}</h3>
-            <h3>1$ = {parseFloat(data).toFixed(3)}€</h3>
+            <h3>${parseFloat(data).toFixed(0)}</h3>
         </div>
     )
 }
 
-export default Converter
+export default CryptoConv

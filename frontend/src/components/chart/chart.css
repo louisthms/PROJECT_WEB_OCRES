@@ -1,0 +1,22 @@
+.chart {
+    background-color: #2B2D3E;
+    color: black;
+    padding: 25px 20px;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 10px #ccc;
+    transition-property: box-shadow, transform;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+    width: 40%;
+}
+
+.chart:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px #ffee10;
+    transform: translateY(-1rem);
+}
+
+
+h3 {
+    color: white;
+}
