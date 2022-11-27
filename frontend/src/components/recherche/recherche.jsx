@@ -8,7 +8,6 @@ const Recherche = () => {
         <div className="recherche">
             <Navbar />
             <SearchBar />
-
         </div>
     )
 }
