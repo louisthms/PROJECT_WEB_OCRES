@@ -55,7 +55,7 @@ const SearchBar = () => {
             </div>
             <div className="search">
                 <div className="searchChart">
-                    {data != "" ? <h2>{data}</h2> : <h3></h3>}
+                    <h2>{data}</h2>
                     <Chart options={{
                         stroke: {
                             curve: 'smooth',
@@ -102,6 +102,8 @@ const SearchBar = () => {
                             name: 'value',
                             data: stockY,
                         }]} type="area" />
+
+
                 </div>
             </div>
         </div>
