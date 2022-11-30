@@ -1,0 +1,56 @@
+.search {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.search input {
+    background-color: white;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 30px;
+    width: 100%;
+    border-radius: 0.7rem 0 0 0.7rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchIcon {
+    height: 60px;
+    width: 33.33%;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 0 0.7rem 0.7rem 0;
+}
+
+.searchInputs {
+    display: flex;
+}
+
+.searchChart {
+    background-color: #2B2D3E;
+    margin-bottom: 1rem;
+    color: black;
+    padding: 25px 20px;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 10px #ccc;
+    transition-property: box-shadow, transform;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+    width: 40%;
+}
+
+.searchChart:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px #ffee10;
+    transform: translateY(-1rem);
+}
+
+h2 {
+    color: white;
+}
