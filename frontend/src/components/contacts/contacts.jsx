@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../navbar/navbar';
 import './contacts.css';
+//import Log from './Log';
 
 const contacts = () => {
     return (
