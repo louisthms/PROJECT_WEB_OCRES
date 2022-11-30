@@ -3,7 +3,7 @@ import React from 'react';
 function ConfigC() {
     return (
         <div>
-            Supprimer er un cSontact
+            Supprimer un cSontact
         </div>
     );
 }
