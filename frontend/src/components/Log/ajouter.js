@@ -14,7 +14,7 @@ const Ajouter = () => {
         axios({
             method:"post",
             url:'http://localhost:3008/api/user/register',
-            withCredentials:true,
+            //with Credentials:true
             data:{
                 email,
                 nom,
