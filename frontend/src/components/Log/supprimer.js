@@ -9,8 +9,8 @@ const Supprimer = () => {
    //const emailError = document.querySelector('.email.error');
         axios({
             method:"delete",
-            url:'http://localhost:3000/api/user/:id',
-            withCredentials:true,
+            url:'http://localhost:3008/api/user/:id',
+            //withCredentials:true,
             data:{
                 email,
             },
