@@ -3,7 +3,7 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const contactRoutes = require('./routes/contact.routes');
-require('.models/dBConfig');
+//require('.models/dBConfig');
 const cors = require('cors');
 
 var indexRouter = require("./routes/index");
