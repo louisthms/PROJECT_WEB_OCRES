@@ -1,4 +1,3 @@
-/*
 const mongoose = require('mongoose');
 
 mongoose.connect(
@@ -9,4 +8,3 @@ mongoose.connect(
         else console.log("Connection error :" + err);
     }
 )
-*/
