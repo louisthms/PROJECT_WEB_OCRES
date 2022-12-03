@@ -1,15 +1,15 @@
 import React from 'react'
 import Navbar from '../navbar/navbar';
 import './contacts.css';
-import Log from '../Log';
+import Admin from '../admin/admin';
 
 const contacts = () => {
     return (
         <div className="contacts">
             <Navbar />
-            <Log />
+            <Admin />
         </div>
     )
 }
 
-export default contacts
+export default contacts;

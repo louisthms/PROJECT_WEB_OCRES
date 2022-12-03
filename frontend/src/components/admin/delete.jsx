@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const Supprimer = () => {
-    const [email, setEmail] = useState ('');
-    
+const Delete = () => {
+    const [email, setEmail] = useState('');
+
     const handleAjout = (e) => {
         e.preventDefault();
-   //const emailError = document.querySelector('.email.error');
+        //const emailError = document.querySelector('.email.error');
         axios({
-            method:"delete",
-            url:'http://localhost:3008/api/user/:id',
+            method: "delete",
+            url: 'http://localhost:3008/api/user/:id',
             //withCredentials:true,
-            data:{
+            data: {
                 email,
             },
         })
@@ -29,16 +29,16 @@ const Supprimer = () => {
     return (
         <form action="" onSubmit={handleAjout} id="ajoutform">
 
-<label htmlFor="email">Email</label>
-<br/>
-<input type="text" name="email" id="email"
-onChange={(e)=> setEmail(e.target.value)}
-value={email}
-/>
-<br/>
-<input type="submit" valeur="supprimer"/>
+            <label htmlFor="email">Email</label>
+            <br />
+            <input type="text" name="email" id="email"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+            />
+            <br />
+            <input type="submit" valeur="supprimer" />
         </form>
     );
 };
 
-export default Supprimer;
+export default Delete;
