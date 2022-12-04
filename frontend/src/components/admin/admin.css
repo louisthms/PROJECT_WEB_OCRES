@@ -93,3 +93,21 @@ input {
 .submit:active {
     background-color: #06b;
 }
+
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border: 2px solid rgb(139, 34, 34);
+    width: 800px;
+    height: 200px;
+}
+
+
+td {
+    text-align: center;
+}

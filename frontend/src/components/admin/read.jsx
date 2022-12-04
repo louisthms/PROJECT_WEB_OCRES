@@ -21,30 +21,27 @@ function Read() {
 
     }, []);
     return (
-        <table className="table-container">
-            <tr>
-                <th>Nom</th>
-                <th>Prénom</th>
-                <th>Mail</th>
-                <th>Numéro</th>
-            </tr>
-            <tbody>
+        <div className="table-container">
+            <table>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Mail</th>
+                    <th>Numéro</th>
+                </tr>
                 {data ?
                     data.map(data => {
                         return (
-                            <div className="data" key={data.id}>
-                                <tr>
-                                    <td>{data.nom}</td>
-                                    <td>{data.prenom}</td>
-                                    <td>{data.email}</td>
-                                    <td>{data.numero}</td>
-                                </tr>
-                            </div>
+                            <tr key={data.id}>
+                                <td>{data.nom}</td>
+                                <td>{data.prenom}</td>
+                                <td>{data.email}</td>
+                                <td>{data.numero}</td>
+                            </tr>
                         )
                     }) : <h3>No data yet</h3>}
-
-            </tbody>
-        </table>
+            </table>
+        </div>
     );
 }
 
