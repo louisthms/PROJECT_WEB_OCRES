@@ -9,7 +9,7 @@ function Converter() {
     const [val2, setCurrency2] = useState('');
     const getAllData = () => {
         axios
-            .get("https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=X5I9DLG9F0HSSR8C")
+            .get("https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=L71HZJZZBYL6EOG1")
             .then((response) => {
                 console.log(response.data);
                 setData(response.data['Realtime Currency Exchange Rate']['5. Exchange Rate']);

@@ -21,7 +21,7 @@ const SearchBar = () => {
 
     const GetAllData = () => {
         axios
-            .get(`https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${data}&interval=5min&apikey=XR9JO0GLJIEHUET7`)
+            .get(`https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${data}&interval=5min&apikey=L71HZJZZBYL6EOG1`)
             .then((response) => {
                 console.log(response.data);
                 setData(response.data['Meta Data']['2. Symbol']);

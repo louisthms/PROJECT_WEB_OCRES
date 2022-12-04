@@ -18,7 +18,7 @@ class Charts extends React.Component {
     fetchStock() {
         const pointerToThis = this;
         console.log(pointerToThis);
-        let API_Call = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=MSFT&apikey=NQ5GU5ESDIWPVZMJ';
+        let API_Call = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=MSFT&apikey=L71HZJZZBYL6EOG1';
         let stockChartXValuesFunction = [];
         let stockChartYValuesFunction = [];
 

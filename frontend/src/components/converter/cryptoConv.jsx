@@ -9,7 +9,7 @@ function CryptoConv() {
     const [val2, setCurrency2] = useState('');
     const getAllData = () => {
         axios
-            .get("https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=BTC&to_currency=USD&apikey=02TKZBU61JRPZUHO")
+            .get("https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=BTC&to_currency=USD&apikey=L71HZJZZBYL6EOG1")
             .then((response) => {
                 console.log(response.data);
                 setData(response.data['Realtime Currency Exchange Rate']['5. Exchange Rate']);
