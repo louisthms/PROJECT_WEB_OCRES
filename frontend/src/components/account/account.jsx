@@ -15,52 +15,65 @@ const Account = () => {
             <div className="wallet">
                 <Wallet3 />
             </div>
-
-
         </div >
     );
 };
 
 export function Wallet1() {
-    const percentage = 66;
+    const percentage = 100;
     return (
         < div className="CompactCard" >
             <div className="bar">
                 <CircularProgressbar value={percentage} text={`${percentage}%`} />
-                <span>Revenues</span>
+                <span>Portfolio</span>
             </div>
             <div className="information">
-                <span>$12,000</span>
+                <span>$244,155</span>
             </div>
         </div >
     );
 }
 
 export function Wallet2() {
-    const percentage = 10;
+    const percentage = 58;
     return (
         < div className="CompactCard" >
             <div className="bar">
                 <CircularProgressbar value={percentage} text={`${percentage}%`} />
-                <span>Revenues</span>
+                <span>Funds</span>
             </div>
             <div className="information">
-                <span>$14,000</span>
+                <span>$141,609</span>
             </div>
         </div >
     );
 }
 
 export function Wallet3() {
-    const percentage = 100;
+    const percentage = 42;
     return (
         < div className="CompactCard" >
             <div className="bar">
                 <CircularProgressbar value={percentage} text={`${percentage}%`} />
-                <span>Revenues</span>
+                <span>Equities</span>
             </div>
             <div className="information">
-                <span>$19,000</span>
+                <span>$102,546</span>
+            </div>
+        </div >
+    );
+}
+
+export function Wallet4() {
+    const percentage = 13;
+    return (
+        < div className="CompactCard" >
+            <div className="bar">
+                <CircularProgressbar value={percentage} text={`${percentage}%`} />
+                <span>Bonds</span>
+            </div>
+            <div className="information">
+                <span>$19,160</span>
             </div>
         </div >
     );

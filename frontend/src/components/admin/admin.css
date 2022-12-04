@@ -102,12 +102,40 @@ input {
 }
 
 table {
-    border: 2px solid rgb(139, 34, 34);
-    width: 800px;
-    height: 200px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 2rem;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
 }
 
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1rem;
+    background-color: #f8f8f8;
 
-td {
-    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+@media only screen and (max-width: 600px) {
+
+    table,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+}
+
+.delete {
+    background-color: #15172b;
+    border-radius: 0.7rem;
+    box-sizing: border-box;
+
 }

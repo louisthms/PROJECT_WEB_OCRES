@@ -59,17 +59,14 @@ const SearchBar = () => {
                     <Chart options={{
                         stroke: {
                             curve: 'smooth',
-                            width: 2,
-                            colors: ["#ff929f"],
+                            colors: ["white"]
+                        },
+                        fill: {
+                            colors: ["#fff"],
+                            type: "gradient",
                         },
                         chart: {
                             id: 'apexchart-example',
-                            toolbar: {
-                                show: false
-                            },
-                            zoom: {
-                                enabled: false
-                            }
                         },
                         grid: {
                             show: false,
@@ -79,7 +76,6 @@ const SearchBar = () => {
                         },
                         yaxis: {
                             labels: {
-                                show: false,
                                 style: {
                                     colors: 'white',
                                     fontSize: '12px'

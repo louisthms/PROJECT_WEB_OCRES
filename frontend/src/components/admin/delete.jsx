@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './admin.css';
 
 const Delete = () => {
+
     const [email, setEmail] = useState('');
 
     const handleAjout = (e) => {
@@ -27,17 +29,20 @@ const Delete = () => {
         });*/
     };
     return (
-        <form action="" onSubmit={handleAjout} id="ajoutform">
-
-            <label htmlFor="email">Email</label>
-            <br />
-            <input type="text" name="email" id="email"
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-            />
-            <br />
-            <input type="submit" valeur="supprimer" />
-        </form>
+        <div className="delete">
+            <form action="" onSubmit={handleAjout} id="ajoutform">
+                <div class="input-container">
+                    <input class="input-class first" type="text" name="email" id="email"
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
+                        placeholder="Email"
+                    />
+                </div>
+                <div class="input-container">
+                    <input class="submit" type="submit" valeur="supprimer" />
+                </div>
+            </form>
+        </div>
     );
 };
 
