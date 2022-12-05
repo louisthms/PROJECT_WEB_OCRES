@@ -6,7 +6,7 @@ function Read() {
     const [data, setData] = useState('');
     const getAllData = () => {
         axios
-            .get("http://localhost:3008/api/user/")
+            .get("http://localhost:3000/api/user/")
             .then((response) => {
                 console.log(response.data);
                 setData(response.data);

@@ -1,11 +1,10 @@
-/*const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 mongoose.connect(
-    "mongodb://localhost:27017/contact",
-    {useNewUrlParser: true, useUnifiedTopology: true },
+    'mongodb+srv://Gayathrie:Gaya012112@cluster0.puwrjqv.mongodb.net/contact',
+    { useNewUrlParser: true, useUnifiedTopology: true },
     (err) => {
-        if (!err)console.log("Mongodb connected");
+        if (!err) console.log("Mongodb connected");
         else console.log("Connection error :" + err);
     }
 )
-*/

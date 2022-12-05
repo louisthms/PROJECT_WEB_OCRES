@@ -15,7 +15,7 @@ const Create = () => {
         //const emailError = document.querySelector('.email.error');
         axios({
             method: "post",
-            url: 'http://localhost:3008/api/user/register',
+            url: 'http://localhost:3000/api/user/register',
             //with Credentials:true
             data: {
                 email,

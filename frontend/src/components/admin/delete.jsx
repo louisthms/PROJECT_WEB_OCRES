@@ -11,7 +11,7 @@ const Delete = () => {
         //const emailError = document.querySelector('.email.error');
         axios({
             method: "delete",
-            url: 'http://localhost:3008/api/user/:id',
+            url: 'http://localhost:3000/api/user/:id',
             //withCredentials:true,
             data: {
                 email,
