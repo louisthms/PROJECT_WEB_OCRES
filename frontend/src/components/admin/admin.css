@@ -139,3 +139,11 @@ tr:nth-child(even) {
     box-sizing: border-box;
 
 }
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
