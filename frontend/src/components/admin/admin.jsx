@@ -36,7 +36,7 @@ const Admin = () => {
                         <li onClick={handleModals} id="config2">Supprimer</li>
                     </div>
                     <div className="button-style">
-                        <a id="config3">Update</a>
+                        <li onClick={handleModals} id="config3">Update</li>
                     </div>
                 </ul>
                 {ajouterModal && <Create />}
